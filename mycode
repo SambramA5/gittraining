@@ -1,0 +1,11 @@
+2)Create cicd pipeline for below dockerfile
+Dockerfile:
+FROM ubuntu
+RUN apt update
+RUN apt upgrade -y
+RUN apt install -y nodejs
+RUN apt clean RUN rm -rf /var/lib/apt/lists/\*
+a.Write cicd pipeline
+b.Stage: Checkout
+c.Stage: build
+d.Stage: upload to docker registry: using Jenkins give me step by step process
